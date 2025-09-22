@@ -20,3 +20,4 @@ scikit-learn
 torch
 pypdf
 beautifulsoup4
+langchain_experimental
