@@ -17,6 +17,7 @@ requests
 python-dotenv
 streamlit
 scikit-learn
+grandalf
 torch
 pypdf
 beautifulsoup4
@@ -24,3 +25,4 @@ langchain_experimental
 langchain-chroma
 langchain-pinecone
 wikipedia
+youtube_transcript_api

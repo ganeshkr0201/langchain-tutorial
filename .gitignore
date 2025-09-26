@@ -3,3 +3,6 @@
 
 # Ignore virtual environment folder
 venv/
+
+# Ignore mac file
+.DS_Store
