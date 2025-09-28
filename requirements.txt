@@ -27,3 +27,4 @@ langchain-pinecone
 wikipedia
 youtube_transcript_api
 ddgs
+requests
