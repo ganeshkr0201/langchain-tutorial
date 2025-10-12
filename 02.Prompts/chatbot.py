@@ -1,11 +1,17 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
 
 load_dotenv()
 
+llm = HuggingFaceEndpoint(
+    repo_id="google/gemma-2-2b-it",
+    task="text-generation"
+)
 
-model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+model = ChatHuggingFace(llm=llm)
+# model = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
 chat_history = [
     SystemMessage(content="You are a helpful AI assistent.")
